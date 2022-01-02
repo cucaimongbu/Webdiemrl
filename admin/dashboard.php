@@ -8,14 +8,17 @@ require_once('../include/header.php');
 
 // Fetching The Number Of Students
 
-
+$query = "SELECT * FROM students";
+$run = mysqli_query($con,$query);
 // Fetching The Number Of Courses
 
-
+$query = "SELECT * FROM course";
+$run = mysqli_query($con,$query);
 
 // Fetching The Number Of Teachers
 
-
+$query = "SELECT * FROM teacher";
+$run = mysqli_query($con,$query);
 
 ?>
       <!-- The Coding Has Been Started From Here -->

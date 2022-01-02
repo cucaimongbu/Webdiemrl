@@ -35,7 +35,7 @@ $count = 0;
 
       <!-- The Coding Has Been Started From Here -->
 
-      <nav class="teal">
+      <nav class="red darken-2">
         <div class="container">
           <div class="nav-wrapper">
             <a href="" class="brand-logo center">Trường THPT CHUYÊN QUỐC HỌC</a>
@@ -49,25 +49,17 @@ $count = 0;
 
       <div class="main">
 	  
-              <div class="card-panel"><h5>DANH SÁCH TIÊU CHÍ</h5>
+              <div class="card-panel center"><h5>Danh sách tiêu chí</h5>
           <card-title>
-            
           </card-title>
-                  <?php
-                //    if(isset($_POST['editcbtn']))
-                //   {
-                //    echo "editlop";
-                //   }
-                //   else{echo "no edit couse";}
-                  ?>
           <div class="card-content">
             <table class="striped " id ="myTable">
               <thead>
                 <tr>
               <th>STT</th>
-              <th>Mã tiêu chí</th>
-              <th>Tên tiêu chí</th>
-			  <th>Action</th>
+              <th>Mã tiêu chsi</th>
+              <th>Tiêu chí</th>
+			  <th>Tùy chọn</th>
             </tr>
             
             </thead>

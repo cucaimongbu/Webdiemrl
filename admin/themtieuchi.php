@@ -11,26 +11,25 @@ require_once('../include/dbcon.php');
 
     $matc = $_POST['matc'];
     $tentc= $_POST['tentc'];
-    //$namhoc= $_POST['namhoc'];
 
-    $query = "INSERT INTO `tieuchi`(`matc`, `tentc`) VALUES ('$matc','$tentc')";
+   $query = "INSERT INTO `tieuchi`(`matc`, `tentc`) VALUES ('$matc','$tentc')";
     $run = mysqli_query($con,$query);
     
     if($run)
     {
-        $_SESSION['chude_added_successfully'] = "Tạo tiêu chí thành công";
-        $chude_added_successfully = $_SESSION['chude_added_successfully'];
+        $_SESSION['tieuchi_added_successfully'] = "Thêm tiêu chí thành công";
+        $tieuchi_added_successfully = $_SESSION['tieuchi_added_successfully'];
     }
     else{
 
-     echo "Tạo tiêu chí thất bại ".mysqli_error($con);
+     echo "Thêm tiêu chí thất bại ".mysqli_error($con);
     }
 }
 ?>
 
       <!-- The Coding Has Been Started From Here -->
 
-      <nav class="teal">
+      <nav class="red darken-2">
         <div class="container">
           <div class="nav-wrapper">
             <a href="" class="brand-logo center">Trường THPT Chuyên Quốc Học</a>
@@ -43,12 +42,12 @@ require_once('../include/dbcon.php');
       <!-- The Dashboard Coding Started From Here -->
 
         <div class="card-panel main">
-            <span class="card-title container">
-              <h5>Thêm tiêu chí</h5>
+            <span class="card-title container center">
+              <h5>Thêm Tiêu chí</h5>
               <h5 class="center red-text"><?php 
               
-                if(isset($chude_added_successfully)){
-                  echo $chude_added_successfully; 
+                if(isset($tieuchi_added_successfully)){
+                  echo $tieuchi_added_successfully; 
                 }
                 
 
@@ -64,7 +63,7 @@ require_once('../include/dbcon.php');
               <div class="input-field">
                 <i class="material-icons prefix">topic</i>
                 <input type="text" name="tentc" id="tentc" required="required">
-                <label for="tenlop" class="">Nhập tên tiêu chí</label>
+                <label for="tentc" class="">Nhập tiêu chí</label>
               </div>
               <button type="submit" name="add_tieuchi" class="btn" style="width:100%;">Thêm tiêu chí</button>
             </div>
