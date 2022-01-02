@@ -13,24 +13,12 @@ $image = $data['image'];
 
 <ul class="sidenav collapsible sidenav-fixed" id="slide-out">
         <li>
-          <div class="user-view">
             <div class="background">
-              <img src="../images/bg1.jpg" class="responsive-img" alt="">
+              <img src="../images/quochoc9.jpg" class="responsive-img" alt="">
             </div>
-            <a href="../admin/uedituser.php?id=<?php echo $uid; ?>" class="">
-              <img src="../userimg/<?php
-                                    if (isset($image) && !empty($image)){
-                                     echo $image;
-                                    }
-                                    else
-                                    {
-                                      echo "user.png";
-                                    }
-                                      ?>" alt="" class="responsive-img circle">
-            </a>
-           <b> <span class="username"><?php echo $username; ?></span> --</b>
-            <span class="hoten"><?php echo $hoten; ?></span>
-          </div>
+            
+           <b> <span class="hoten red-text"><i class="material-icons">person</i><?php echo $hoten; ?></span></b>
+         
         </li>
         <li><a href="udashboard.php"><i class="material-icons">home</i>Trang chủ</a></li>
 		
@@ -57,9 +45,6 @@ $image = $data['image'];
           </div>
         </li>
 		
-		
-
-		<li><a href="../admin/bangdiem.php"><i class="material-icons">list</i>Bảng điểm</a></li>
         <div class="divider"></div>
         <li><a href="../include/logout.php"><i class="material-icons">logout</i>Logout</a></li>
 
